@@ -1,0 +1,18 @@
+<div class="row marketing" ng-controller="JoinCtrl">
+	<div class="col-md-12">
+		<div class="panel panel-default panel-primary" ng-hide="selectedChannel">
+			<div class="panel-heading">
+				<h3 class="panel-title">Join Chat</h3>
+			</div>
+			<form class="panel-body ng-pristine ng-valid" ng-submit="join()">
+				<label>Username</label>
+				<input type="text" ng-model="data.username" size="20" max-length="20" class="input-lg form-control ng-pristine ng-valid form-control"/>
+				<br/>
+				<label>City</label>
+				<input type="text" ng-model="data.city" size="20" max-length="20" class="input-lg form-control ng-pristine ng-valid form-control"/>
+				<br/>
+				<input type="submit" class="btn btn-block btn-primary" />
+			</form>
+		</div>
+	</div>
+</div>
